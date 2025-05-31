@@ -1,0 +1,14 @@
+<html>
+<body>
+    <h2>Team Insights for {{ manager }}</h2>
+    <ul>
+    {% for member in team %}
+        <li>
+            <strong>{{ member.Employee }}</strong> - {{ member.Department }}<br>
+            Performance Score: {{ member.PerformanceScore }}<br>
+            Projects Completed: {{ member.ProjectsCompleted }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
